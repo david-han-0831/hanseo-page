@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "한서 건축 | 당신의 공간을 특별하게",
     description: "최고의 디자인과 시공 품질로 당신만의 특별한 공간을 만들어 드립니다",
-    url: "https://hanseo.vercel.app",
+    url: "https://hanseo-page.vercel.app",
     siteName: "한서 건축",
     locale: "ko_KR",
     type: "website",
     images: [
       {
-        url: "/img/room-8.jpg",
+        url: "https://hanseo-page.vercel.app/img/room-8.jpg",
         width: 1200,
         height: 630,
         alt: "한서 건축 대표 이미지"
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "한서 건축 | 당신의 공간을 특별하게",
     description: "최고의 디자인과 시공 품질로 당신만의 특별한 공간을 만들어 드립니다",
-    images: ["/img/room-8.jpg"]
+    images: ["https://hanseo-page.vercel.app/img/room-8.jpg"]
   },
   viewport: {
     width: "device-width",
