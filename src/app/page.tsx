@@ -256,7 +256,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-
+ 
       <Footer />
     </div>
   )
