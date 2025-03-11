@@ -106,7 +106,7 @@ export default function ReviewsPage() {
                       <Star key={i} className="h-5 w-5 text-muted-foreground" />
                     ))}
                 </div>
-                <p className="mb-4 text-muted-foreground">"{review.review}"</p>
+                <p className="mb-4 text-muted-foreground">&ldquo;{review.review}&rdquo;</p>
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-medium">{review.name}</div>
