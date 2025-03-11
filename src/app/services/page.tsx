@@ -12,9 +12,9 @@ export default function ServicesPage() {
       <MainNavigation />
 
       {/* Hero Section */}
-      <section className="relative h-[40vh] w-full overflow-hidden">
+      <section className="relative h-[30vh] md:h-[40vh] w-full overflow-hidden">
         <Image
-          src="/img/room-3.jpg"
+          src="/img/room-4.jpg"
           alt="Our Services"
           fill
           className="object-cover brightness-[0.85]"
@@ -27,10 +27,10 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Section */}
-      <section className="mx-auto max-w-6xl px-4 py-16">
-        <div className="grid gap-12 md:gap-16">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-16">
+        <div className="grid gap-8 md:gap-16">
           {/* Architecture Service */}
-          <div id="architecture" className="grid gap-8 md:grid-cols-2 md:items-center">
+          <div id="architecture" className="grid gap-6 md:gap-8 md:grid-cols-2 md:items-center">
             <div className="order-2 md:order-1">
               <div className="mb-2 inline-block rounded-full bg-[#F5F5F7] px-3 py-1 text-sm text-[#007AFF]">
                 건축 설계
@@ -40,21 +40,21 @@ export default function ServicesPage() {
                 기능성과 미학적 가치를 모두 충족시키는 건축 설계 서비스를 제공합니다. 고객의 니즈와 부지의 특성을 고려한
                 최적의 솔루션을 제안합니다.
               </p>
-              <ul className="mb-6 space-y-2">
+              <ul className="mb-6 space-y-3">
                 <li className="flex items-start">
-                  <CheckCircle2 className="mr-2 h-5 w-5 text-[#007AFF]" />
+                  <CheckCircle2 className="mr-2 h-5 w-5 shrink-0 text-[#007AFF]" />
                   <span>건축 기획 및 컨셉 디자인</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle2 className="mr-2 h-5 w-5 text-[#007AFF]" />
+                  <CheckCircle2 className="mr-2 h-5 w-5 shrink-0 text-[#007AFF]" />
                   <span>기본 및 실시 설계</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle2 className="mr-2 h-5 w-5 text-[#007AFF]" />
+                  <CheckCircle2 className="mr-2 h-5 w-5 shrink-0 text-[#007AFF]" />
                   <span>인허가 및 행정 지원</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle2 className="mr-2 h-5 w-5 text-[#007AFF]" />
+                  <CheckCircle2 className="mr-2 h-5 w-5 shrink-0 text-[#007AFF]" />
                   <span>시공 감리 및 품질 관리</span>
                 </li>
               </ul>
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             <div className="order-1 md:order-2">
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/img/room-2.jpg"
+                  src="/img/room-9.jpg"
                   alt="건축 설계 서비스"
                   fill
                   className="object-cover"
@@ -81,7 +81,7 @@ export default function ServicesPage() {
             <div>
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/img/room-3.jpg"
+                  src="/img/room-8.jpg"
                   alt="인테리어 디자인 서비스"
                   fill
                   className="object-cover"
@@ -161,7 +161,7 @@ export default function ServicesPage() {
             <div className="order-1 md:order-2">
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/img/room-4.jpg"
+                  src="/img/room-7.jpg"
                   alt="리모델링 서비스"
                   fill
                   className="object-cover"

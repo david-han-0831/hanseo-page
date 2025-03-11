@@ -13,7 +13,7 @@ export default function Home() {
       <MainNavigation />
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] w-full overflow-hidden">
+      <section className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
         <Image
           src="/img/room-8.jpg"
           alt="Modern interior design"
@@ -22,7 +22,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-          <h1 className="max-w-4xl text-4xl font-medium tracking-tight text-white sm:text-5xl md:text-6xl">
+          <h1 className="max-w-4xl text-3xl font-medium tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
             당신의 공간을 특별하게
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/90">
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* Company Introduction */}
-      <section className="mx-auto max-w-6xl px-4 py-24">
+      <section className="mx-auto max-w-6xl px-4 py-12 md:py-24">
         <div className="grid gap-12 md:grid-cols-2">
           <div className="space-y-6">
             <h2 className="text-3xl font-medium tracking-tight">미션 & 비전</h2>
@@ -170,7 +170,7 @@ export default function Home() {
               <h3 className="mb-2 text-xl font-medium">{process.title}</h3>
               <p className="text-muted-foreground">{process.description}</p>
               {index < 3 && (
-                <ArrowRight className="absolute -right-4 top-1/2 hidden h-8 w-8 -translate-y-1/2 text-[#007AFF] md:block" />
+                <ArrowRight className="absolute -right-4 top-1/2 hidden h-8 w-8 -translate-y-1/2 text-[#007AFF] lg:block" />
               )}
             </div>
           ))}
@@ -218,7 +218,7 @@ export default function Home() {
                         <Star key={i} className="h-5 w-5 fill-[#007AFF] text-[#007AFF]" />
                       ))}
                   </div>
-                  <p className="mb-4 text-muted-foreground">&ldquo;{testimonial.review}&rdquo;</p>
+                  <p className="mb-4 text-muted-foreground">"{testimonial.review}"</p>
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="font-medium">{testimonial.name}</div>

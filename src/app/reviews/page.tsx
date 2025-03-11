@@ -72,9 +72,9 @@ export default function ReviewsPage() {
       <MainNavigation />
 
       {/* Hero Section */}
-      <section className="relative h-[40vh] w-full overflow-hidden">
+      <section className="relative h-[30vh] md:h-[40vh] w-full overflow-hidden">
         <Image
-          src="/img/room-1.jpg"
+          src="/img/room-2.jpg"
           alt="Customer Reviews"
           fill
           className="object-cover brightness-[0.85]"
@@ -89,7 +89,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* Reviews Section */}
-      <section className="mx-auto max-w-6xl px-4 py-16">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-16">
         <div className="grid gap-8 md:grid-cols-2">
           {reviews.map((review, index) => (
             <Card key={index} className="overflow-hidden">
@@ -106,7 +106,7 @@ export default function ReviewsPage() {
                       <Star key={i} className="h-5 w-5 text-muted-foreground" />
                     ))}
                 </div>
-                <p className="mb-4 text-muted-foreground">&ldquo;{review.review}&rdquo;</p>
+                <p className="mb-4 text-muted-foreground">"{review.review}"</p>
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-medium">{review.name}</div>
@@ -151,7 +151,7 @@ export default function ReviewsPage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="relative aspect-video">
+                  <div className="relative aspect-video mt-4 md:mt-0">
                     <div className="absolute left-4 top-4 rounded-full bg-[#007AFF] px-3 py-1 text-xs text-white">
                       After
                     </div>

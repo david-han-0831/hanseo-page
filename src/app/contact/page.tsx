@@ -53,7 +53,7 @@ export default function ContactPage() {
       <MainNavigation />
 
       {/* Hero Section */}
-      <section className="relative h-[40vh] w-full overflow-hidden">
+      <section className="relative h-[30vh] md:h-[40vh] w-full overflow-hidden">
         <Image
           src="/img/room-1.jpg"
           alt="Contact Us"
@@ -68,7 +68,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="mx-auto max-w-6xl px-4 py-16">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-16">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <h2 className="mb-6 text-3xl font-medium tracking-tight">상담 신청</h2>
@@ -76,7 +76,7 @@ export default function ContactPage() {
               아래 양식을 작성하시면 전문 상담사가 빠른 시일 내에 연락드립니다.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="space-y-2">
                 <Label htmlFor="name">이름</Label>
                 <Input
@@ -147,13 +147,13 @@ export default function ContactPage() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-[#007AFF] hover:bg-[#0062CC]">
+              <Button type="submit" className="w-full bg-[#007AFF] hover:bg-[#0062CC] py-6 text-base">
                 상담 신청하기 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>
           </div>
 
-          <div className="flex flex-col justify-between lg:pl-12">
+          <div className="flex flex-col justify-between lg:pl-12 mt-12 lg:mt-0">
             <div>
               <h2 className="mb-6 text-3xl font-medium tracking-tight">연락처 정보</h2>
               <div className="mb-8 space-y-4">
@@ -213,9 +213,9 @@ export default function ContactPage() {
         <div className="relative h-full w-full">
           <Image src="/img/location.png" alt="Map" fill className="object-cover" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="rounded-lg bg-white p-4 shadow-lg">
+            {/* <div className="rounded-lg bg-white p-4 shadow-lg">
               <MapPin className="h-8 w-8 text-[#007AFF]" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

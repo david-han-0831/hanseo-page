@@ -15,12 +15,12 @@ export default function PortfolioPage() {
     { title: "분당 오피스", category: "상업공간", image: "/img/room-3.jpg" },
     { title: "한남동 빌라", category: "리모델링", image: "/img/room-4.jpg" },
     { title: "이태원 레스토랑", category: "상업공간", image: "/img/room-5.jpg" },
-    { title: "용산 아파트", category: "주거공간", image: "/img/room-6.jpg" },
+    { title: "용산 아파트", category: "주거공간", image: "/img/room-6.jpg"  },
     { title: "판교 테크노밸리 사무실", category: "상업공간", image: "/img/room-7.jpg" },
-    { title: "청담동 펜트하우스", category: "주거공간", image: "/img/room-9.jpg" },
+    { title: "청담동 펜트하우스", category: "주거공간", image: "/img/room-8.jpg" },
     { title: "홍대 쇼룸", category: "상업공간", image: "/img/room-9.jpg" },
     { title: "송파 아파트", category: "리모델링", image: "/img/kitchen-1.jpg" },
-    { title: "광화문 오피스", category: "상업공간", image: "/img/kitchen-2.jpg" },
+    { title: "광화문 오피스", category: "상업공간", image: "/img/kitchen-2.jpg"  },
     { title: "마포 단독주택", category: "주거공간", image: "/img/kitchen-3.jpg" },
   ]
 
@@ -29,9 +29,9 @@ export default function PortfolioPage() {
       <MainNavigation />
 
       {/* Hero Section */}
-      <section className="relative h-[40vh] w-full overflow-hidden">
+      <section className="relative h-[30vh] md:h-[40vh] w-full overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1920"
+          src="/img/room-1.jpg"
           alt="Portfolio"
           fill
           className="object-cover brightness-[0.85]"
@@ -47,11 +47,19 @@ export default function PortfolioPage() {
       <section className="mx-auto max-w-6xl px-4 py-16">
         <Tabs defaultValue="all" className="w-full">
           <div className="mb-8 flex justify-center">
-            <TabsList className="grid w-full max-w-md grid-cols-4">
-              <TabsTrigger value="all">전체</TabsTrigger>
-              <TabsTrigger value="residential">주거공간</TabsTrigger>
-              <TabsTrigger value="commercial">상업공간</TabsTrigger>
-              <TabsTrigger value="remodeling">리모델링</TabsTrigger>
+            <TabsList className="grid w-full max-w-md grid-cols-2 sm:grid-cols-4">
+              <TabsTrigger value="all" className="px-2 py-2 text-sm">
+                전체
+              </TabsTrigger>
+              <TabsTrigger value="residential" className="px-2 py-2 text-sm">
+                주거공간
+              </TabsTrigger>
+              <TabsTrigger value="commercial" className="px-2 py-2 text-sm">
+                상업공간
+              </TabsTrigger>
+              <TabsTrigger value="remodeling" className="px-2 py-2 text-sm">
+                리모델링
+              </TabsTrigger>
             </TabsList>
           </div>
 

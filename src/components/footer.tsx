@@ -11,17 +11,17 @@ export default function Footer() {
             <p className="mb-4 text-sm text-muted-foreground">
               최고의 디자인과 시공 품질로 당신만의 특별한 공간을 만들어 드립니다.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-6">
               <Link href="#" className="text-muted-foreground hover:text-[#007AFF]">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-[#007AFF]">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-[#007AFF]">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-lg font-medium">바로가기</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-[#007AFF]">
                   홈
@@ -86,7 +86,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 text-lg font-medium">연락처</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-4 text-sm">
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-[#007AFF]" />
                 <span className="text-muted-foreground">서울특별시 강남구 테헤란로 123 스페이스빌딩 8층</span>

@@ -57,19 +57,19 @@ export default function MainNavigation() {
           isMenuOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
-        <nav className="flex flex-col space-y-4">
+        <nav className="flex flex-col space-y-6">
           {navItems.map((item, index) => (
             <Link
               key={index}
               href={item.href}
-              className="flex h-10 items-center rounded-md px-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+              className="flex h-12 items-center rounded-md px-4 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}
             </Link>
           ))}
           <div className="pt-4">
-            <Button className="w-full bg-[#007AFF] hover:bg-[#0062CC]" asChild>
+            <Button className="w-full bg-[#007AFF] hover:bg-[#0062CC] py-6 text-base" asChild>
               <Link href="/contact">무료 상담 신청</Link>
             </Button>
           </div>
